@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 
 app.get('/', function (req, res) {
-    res.render('placeholder', {restaurant: restaurant});
+    res.render('about', {restaurant: restaurant});
 });
 
 app.get('/about', function (req, res) {
