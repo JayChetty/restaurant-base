@@ -15,6 +15,18 @@ app.get('/', function (req, res) {
     res.render('home', {restaurant: restaurant});
 });
 
+app.get('/about', function (req, res) {
+    res.render('home', {restaurant: restaurant});
+});
+
+app.get('/menu', function (req, res) {
+    res.render('home', {restaurant: restaurant});
+});
+
+app.get('/contact', function (req, res) {
+    res.render('home', {restaurant: restaurant});
+});
+
 
 var server = app.listen(3000, function () {
   var host = server.address().address;

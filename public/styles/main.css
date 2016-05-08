@@ -1,3 +1,4 @@
+
 body{
   background-color:#eeeeee;
 }
@@ -5,6 +6,7 @@ body{
 .panel{
   display:flex;
   flex-direction:column;
+  justify-content:space-around;
 }
 
 .panel-header{
@@ -21,11 +23,17 @@ body{
 
 .panel-body{
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
+  justify-content: space-around;
+}
+
+.body-item{
+  display:flex;
   justify-content: center;
   border-radius:5px;
   border-style:solid;
   background-color:white;
+  margin-top:10px;
 }
 
 .nav-item{
@@ -35,7 +43,10 @@ body{
   border-width:2px;
   border-radius: 5px;
   background-color:white;
+}
 
+.nav-item.selected{
+  background-color:green;
 }
 .nav-item a{
   color: #000000;
